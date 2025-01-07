@@ -17,4 +17,4 @@ Feel free to upgrade pip here if prompted to
 
 At this point, select the python3.11 interpreter in VSCode/your editor
 
-Also create a .env file that contains the OpenAPI API Key, please message Haashim to get it!
+Don't forget to add your own OpenAI API key for the generative features!
