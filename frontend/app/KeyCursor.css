@@ -1,0 +1,14 @@
+body {
+  cursor: url('../public/images/key.png'), auto; /* Replace default cursor with the key image */
+  cursor: none; /* Hide the default cursor */
+}
+
+.key {
+  position: absolute;
+  width: 40px; /* Adjust the size of the key */
+  height: 40px; /* Adjust the size of the key */
+  background-image: url('../public/images/key.png'); /* Specify the path to your key image */
+  background-size: contain; /* Ensure the key image fits within the specified dimensions */
+  z-index: 2; /* Ensure the key is above the background */
+  pointer-events: none; /* Allow mouse events to pass through the key */
+}

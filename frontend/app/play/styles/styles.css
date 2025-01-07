@@ -1,0 +1,149 @@
+.background-image {
+  background-image: url('../../../images/background.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  inset: 0;
+  z-index: -5;
+  position: fixed;
+  animation: fadeIn 3s ease-in;
+  
+  /* DOES ROTATION OF BG
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vh;
+  height: 100vw;
+  inset: 0;
+  z-index: -5;
+  position: fixed;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: left top;
+  animation: fadeIn 3s ease-in; */
+}
+
+.fade {
+  animation: fadeIn 2s ease-in;
+}
+
+.input-style {
+  letter-spacing: 5vw;
+  padding: 1.1vw;
+  font-size: 2.2vw;
+  border: 5px double #000;
+  border-radius: 5px;
+  text-align: center;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.timer-text {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #FF0000;
+}
+
+.timer-bar {
+  width: 100%;
+  height: 30px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 3px ridge black;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.1));
+  padding: 3px;
+}
+
+.bar {
+  width: 0;
+  height: 100%;
+  border-radius: 50px;
+}
+
+@keyframes animate-bar {
+  0% {
+    width: 100%;
+    background-color: #209f01;
+    
+  }
+  100% {
+    /* background: linear-gradient(to right, darkred, red, darkred); */
+    background-color: #FF0000;
+    width: 0;
+  }
+}
+
+.div-background {
+  background-image: url('../../../images/paper1.png');
+  background-size: 105% 110%;
+  background-position: calc(50% + 10px) calc(50% - 1px);
+  box-sizing: border-box;
+  padding: 25px 45px;
+  max-height: 100%;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.2em;
+  height: 1.2em;
+  background-color: black;
+  animation: blink-cursor .6s infinite
+}
+
+
+@keyframes blink-cursor {
+  0%   {opacity: 1;}
+  24.99%   {opacity: 1;}
+  25%  {opacity: 0;}
+  100% {opacity: 0;}
+  }
+
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+@keyframes time-colour {
+    0% {
+      color: #209f01;
+    }
+    
+    50% {
+      color: #be6f00;
+    }
+    
+    100% {
+      color: #FF0000;
+    }
+  }
+
+
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0vw);
+  }
+  
+  25% {
+    transform: translateX(-1vw);
+  }
+  
+  75% {
+    transform: translateX(2vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
